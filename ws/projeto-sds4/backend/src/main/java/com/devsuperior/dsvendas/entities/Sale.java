@@ -16,7 +16,6 @@ import lombok.Data;
 @Entity
 @Table(name = "tb_sales")
 public class Sale {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -27,6 +26,6 @@ public class Sale {
 	
 	@ManyToOne
 	@JoinColumn(name = "seller_id")
-	private Seller seller;
+	private Seller seller;	
 
 }

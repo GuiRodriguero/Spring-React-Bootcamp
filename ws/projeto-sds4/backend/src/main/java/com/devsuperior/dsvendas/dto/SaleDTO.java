@@ -17,6 +17,7 @@ public class SaleDTO {
 	
 	private SellerDTO seller;
 	
+
 	public SaleDTO(Sale entity) {
 		id = entity.getId();
 		visited = entity.getVisited();
@@ -25,4 +26,5 @@ public class SaleDTO {
 		date = entity.getDate();
 		seller = new SellerDTO(entity.getSeller());
 	}
+	
 }
