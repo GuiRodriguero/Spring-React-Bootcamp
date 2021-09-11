@@ -1,4 +1,10 @@
-const Pagination = () => {
+import { SalePage } from "types/sale";
+
+type Props = {
+    page: SalePage;
+}
+
+const Pagination = ({ page } : Props) => {
     return(
         <div className="row d-flex justify-content-center">
             <nav>
